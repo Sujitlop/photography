@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photography</title>
+    <link rel="stylesheet" href="./photo4.css">
+</head>
+
+<body>
+
+
+    <h1>Wildlife Photo Collection</h1>
+    <div class="top">
+        <div class="photo">
+            <img src="./wildlife-photography_Kangaroo.jpg" alt="The img is corrupt.">
+        </div>
+        <div class="photographer">
+            <img src="./sujit.jpg" alt="">
+            <h2 >Photographer</h2><br>
+            <h3>Sujit Lopchan</h3>
+            <h2 id="abt">About</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum amet possimus quod voluptates voluptas veniam molestias sit harum earum, incidunt quos officia iure quas iusto exercitationem consequatur eligendi vitae blanditiis sequi laboriosam ratione tempora expedita. Impedit odio doloribus quisquam. Facere repudiandae quod, aliquam natus quia corporis ea? Reprehenderit velit fuga, facilis doloribus exercitationem error reiciendis eligendi numquam delectus saepe amet?</p>
+        </div>
+    </div>
+    <div class="in_body">
+        <div class="inner_body">
+            <section id="app">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="comment">
+                    <p v-for="items in item" v-text="items"></p>
+                      </div><!--End Comment-->
+                      </div><!--End col -->
+                      </div><!-- End row -->
+                  <div class="row">
+                    <div class="col-6">
+                  <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                      <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                    </div><!-- End col -->
+                  </div><!--End Row -->
+                </div><!--End Container -->
+              </section><!-- end App -->
+        </div>
+        <input type="submit" value="View all Photos" id="view">
+        <h2>Save the most beautiful memories of your jungle!</h2>
+        <input type="submit" value="Submit your Photographs" id="submit">
+    </div>
+</body>
+
+</html>
